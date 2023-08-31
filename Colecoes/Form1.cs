@@ -27,9 +27,10 @@ namespace Colecoes
 
             List<string> nomes2 = new List<string>();
 
-            nomes2.Add("Lucas");
+            nomes2.Add("Leo");
             nomes2.Add("Julia");
 
+            lista.Items.Add(nomes2[0]);
             lista.Items.Add(nomes2[1]);
 
         }
