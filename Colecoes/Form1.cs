@@ -16,5 +16,14 @@ namespace Colecoes
         {
             InitializeComponent();
         }
+
+        private void btnList_Click(object sender, EventArgs e)
+        {
+            string[] nomes = new string[3];
+            nomes[0] = "Felipe";
+            nomes[1] = "Gabriel";
+            nomes[3] = "Toni";
+
+        }
     }
 }
