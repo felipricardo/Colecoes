@@ -33,6 +33,9 @@ namespace Colecoes
 
             lista.Items.Add(nomes2[0]);
             lista.Items.Add(nomes2[1]);
+            lista.Items.Add(nomes2[2]);
+            lista.Items.Add(nomes2[3]);
+            lista.Items.Add(nomes2[4]);
 
         }
     }
