@@ -29,6 +29,7 @@ namespace Colecoes
 
             nomes2.Add("Leo");
             nomes2.Add("Julia");
+            nomes2.AddRange(nomes);
 
             lista.Items.Add(nomes2[0]);
             lista.Items.Add(nomes2[1]);
