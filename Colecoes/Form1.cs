@@ -109,8 +109,6 @@ namespace Colecoes
             // veiculos.First();  // retorno o primeiro elemento
             // veiculos.Last(); // o ultimo
 
-
-
             foreach (string item in veiculos)
             {
                 lista.Items.Add(item);
@@ -119,6 +117,8 @@ namespace Colecoes
 
         private void btnDictionary_Click(object sender, EventArgs e)
         {
+            lista.Items.Clear();
+
             Dictionary<int, string> alunos = new Dictionary<int, string>()
             {
                 { 177, "Luca" },
@@ -127,12 +127,29 @@ namespace Colecoes
                 { 400, "Julia" }
             };
 
-            alunos.Add(100, "Felipe");
+            alunos.Add(20, "Max");
+
+            KeyValuePair<int, string> primeiro = alunos.First();
+
+            MessageBox.Show("Primeiro " + primeiro.Key + " " + primeiro.Value);
 
             foreach (KeyValuePair<int, string> item in alunos)
             {
-                lista.Items.Add(item.Value);
+                lista.Items.Add(item.Key + " * " + item.Value);
             }
+
+            MessageBox.Show("Quantidade de alunos: " + alunos.Count);
+
+            // alunos.Count;  // conta os items da lista
+            // alunos.Clear(); // limpa a lista cada vez que rodar
+            // alunos.ContainsKey(200); 
+            // alunos.ContainsValue("Felipe"); // 
+            // alunos.Remove(1); // remover item o especificando
+            // alunos.First();  // retorno o primeiro elemento
+            // alunos.Last(); // o ultimo
+
+
+
         }
     }
 }
