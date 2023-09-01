@@ -218,6 +218,15 @@ namespace Colecoes
                 "Gabriel", "Julio", "Ana", "Luiza"
             };
 
+            if (nomes.Add("John"))
+            {
+                MessageBox.Show("Foi add");
+            }
+            else
+            {
+                MessageBox.Show("Foi de base");
+            }
+
             foreach (string nome in nomes)
             {
                 lista.Items.Add(nome);
