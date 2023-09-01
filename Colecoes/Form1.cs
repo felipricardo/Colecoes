@@ -209,5 +209,19 @@ namespace Colecoes
                 lista.Items.Add(item);
             }
         }
+
+        private void btnSortedSet_Click(object sender, EventArgs e)
+        {
+            lista.Items.Clear();
+            SortedSet<string> nomes = new SortedSet<string>()
+            {
+                "Gabriel", "Julio", "Ana", "Luiza"
+            };
+
+            foreach (string nome in nomes)
+            {
+                lista.Items.Add(nome);
+            }
+        }
     }
 }
