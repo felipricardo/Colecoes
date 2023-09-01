@@ -202,7 +202,7 @@ namespace Colecoes
             //alunos.Remove(2);
             // alunos.ElementAt(0); // retorna um elemento contido em determinado indice
             // (o indece é sempre um numero inteiro na ordem crescente)
-            MessageBox.Show(alunos.ElementAt(0).ToString());
+            //MessageBox.Show(alunos.ElementAt(0).ToString());
 
             foreach (KeyValuePair<int, string> item in alunos.Reverse())
             {
