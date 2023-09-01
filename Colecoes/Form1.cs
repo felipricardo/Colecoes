@@ -132,7 +132,7 @@ namespace Colecoes
             //KeyValuePair<int, string> primeiro = alunos.First();
             //MessageBox.Show("Primeiro " + primeiro.Key + " " + primeiro.Value);
 
-            MessageBox.Show("Ultimo " + alunos.Last().Key + " " + alunos.Last().Value);
+            //MessageBox.Show("Ultimo " + alunos.Last().Key + " " + alunos.Last().Value);
 
             foreach (KeyValuePair<int, string> item in alunos)
             {
