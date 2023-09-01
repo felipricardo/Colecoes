@@ -19,6 +19,7 @@ namespace Colecoes
 
         private void btnList_Click(object sender, EventArgs e)
         {
+            lista.Items.Clear();
             // Array
             string[] nomes = new string[3];
             nomes[0] = "Felipe";
@@ -40,6 +41,22 @@ namespace Colecoes
             //{
             //    MessageBox.Show("Não foi possivel remover!");
             //}
+
+            //if (nomes2.Contains("Julia"))
+            //{
+            //    MessageBox.Show("Contém");
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Não contém");
+            //}
+
+            //MessageBox.Show("Número de elementos: " + nomes2.Count);
+            //nomes2.Sort();
+
+            //MessageBox.Show("Toni está no indice: " + nomes2.IndexOf("Max"));
+
+            //nomes2.Insert(2, "Max");
 
             foreach (string nome in nomes2)
             {
