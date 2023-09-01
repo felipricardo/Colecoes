@@ -121,10 +121,10 @@ namespace Colecoes
 
             Dictionary<int, string> alunos = new Dictionary<int, string>()
             {
-                { 177, "Luca" },
-                { 201, "Andre" },
+                { 17, "Luca" },
+                { 20, "Andre" },
                 { 19, "Felipe" },
-                { 400, "Julia" }
+                { 40, "Julia" }
             };
 
             alunos.Add(20, "Max");
@@ -161,6 +161,27 @@ namespace Colecoes
 
 
 
+        }
+
+        private void btnSortedList_Click(object sender, EventArgs e)
+        {
+            lista.Items.Clear();
+            SortedList<int, string> alunos = new SortedList<int, string>()
+            {
+                { 19, "Felipe" },
+                { 40, "Julia" },
+                { 20, "Andre" }
+            };
+
+            alunos.Add(14, "Gloria");
+            // alunos.Reverse(); // lista os itens em sequencia reversa
+            // alunos.Remove(19); // remove o item identificado
+            // alunos.RemovveAt(0) // remove o item a partir da posição informada
+
+            foreach (KeyValuePair<int, string> item in alunos)
+            {
+                lista.Items.Add(item.Key + " " + item.Value);
+            }
         }
     }
 }
