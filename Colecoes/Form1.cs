@@ -129,6 +129,15 @@ namespace Colecoes
 
             alunos.Add(20, "Max");
 
+            if (alunos.ContainsKey(19))
+            {
+                MessageBox.Show("Contem a chave 19");
+            }
+            else
+            {
+                MessageBox.Show("Não contem a chave 19");
+            }
+
             //KeyValuePair<int, string> primeiro = alunos.First();
             //MessageBox.Show("Primeiro " + primeiro.Key + " " + primeiro.Value);
 
