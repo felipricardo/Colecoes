@@ -177,6 +177,9 @@ namespace Colecoes
             // alunos.Reverse(); // lista os itens em sequencia reversa
             // alunos.Remove(19); // remove o item identificado
             // alunos.RemovveAt(0) // remove o item a partir da posição informada
+            //alunos.ContainsKey(20); // verifica se contem a chave informada e retorna um booleano
+            //alunos.ContainsValue("Andre"); // verifica se contem a string informada e retorna um booleano
+
 
             foreach (KeyValuePair<int, string> item in alunos)
             {
