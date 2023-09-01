@@ -32,6 +32,15 @@ namespace Colecoes
             nomes2.Add("Julia");
             nomes2.AddRange(nomes);
 
+            if (nomes2.Remove("Toni"))
+            {
+                MessageBox.Show("Toni removido");
+            }
+            else
+            {
+                MessageBox.Show("Não foi possivel remover!");
+            }
+
             foreach (string nome in nomes2)
             {
                 lista.Items.Add(nome);
