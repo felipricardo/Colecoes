@@ -78,10 +78,10 @@ namespace Colecoes
 
             HashSet<string> veiculos = new HashSet<string>()
             {
-                "Carro", "Moto", "Avião", "Bike", "Barco"
+                "Motociclo", "Skate", "Avião", "Bike", "Patinete"
             };
 
-            MessageBox.Show(veiculos.ElementAt(3));
+            //MessageBox.Show(veiculos.ElementAt(3));
 
             //if (veiculos.Add("Jetski"))
             //{
@@ -92,12 +92,6 @@ namespace Colecoes
             //    MessageBox.Show("Don't add.");
             //}
 
-            // Métodos no HashSet:
-            //veiculos.Count;  // conta os items da lista
-            //veiculos.Clear(); // limpa a lista cada vez que rodar
-            //veiculos.Contains(""); // verifica se o elemento está na lista ou não
-            //veiculos.Remove(""); // remover item o especificando
-
             //if (veiculos.Contains("Bike"))
             //{
             //    MessageBox.Show("Contem.");
@@ -107,8 +101,15 @@ namespace Colecoes
             //    MessageBox.Show("Não contem.");
             //}
 
-            // veiculos.Remove("");
-            int num = veiculos.Count;
+            // Métodos no HashSet:
+            // veiculos.Count;  // conta os items da lista
+            // veiculos.Clear(); // limpa a lista cada vez que rodar
+            // veiculos.Contains(""); // verifica se o elemento está na lista ou não
+            // veiculos.Remove(""); // remover item o especificando
+            // veiculos.First();  // retorno o primeiro elemento
+            // veiculos.Last(); // o ultimo
+
+
 
             foreach (string item in veiculos)
             {
