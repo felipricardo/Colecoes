@@ -60,6 +60,8 @@ namespace Colecoes
 
             //nomes2.RemoveAt(1);
 
+            //nomes2.Clear(); // limpa toda a lista
+
             foreach (string nome in nomes2)
             {
                 lista.Items.Add(nome);
