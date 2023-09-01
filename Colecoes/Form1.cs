@@ -179,8 +179,7 @@ namespace Colecoes
             // alunos.RemovveAt(0) // remove o item a partir da posição informada
             // alunos.ContainsKey(20); // verifica se contem a chave informada e retorna um booleano
             // alunos.ContainsValue("Andre"); // verifica se contem a string informada e retorna um booleano
-            // alunos.ElementAt(0); // retorna um elemento contido em determinado indice
-            // (o indece é sempre um numero inteiro na ordem crescente)
+            
 
             foreach (KeyValuePair<int, string> item in alunos)
             {
@@ -200,7 +199,10 @@ namespace Colecoes
 
             alunos.Add(88, "Flavio");
 
-            alunos.Remove(2);
+            //alunos.Remove(2);
+            // alunos.ElementAt(0); // retorna um elemento contido em determinado indice
+            // (o indece é sempre um numero inteiro na ordem crescente)
+            MessageBox.Show(alunos.ElementAt(0).ToString());
 
             foreach (KeyValuePair<int, string> item in alunos.Reverse())
             {
