@@ -62,11 +62,38 @@ namespace Colecoes
 
             //nomes2.Clear(); // limpa toda a lista
 
+            //nomes2.Add("Arthur");
+            //nomes2.Add("Sam");
+
             foreach (string nome in nomes2)
             {
                 lista.Items.Add(nome);
             }
 
+        }
+
+        private void btnHashSet_Click(object sender, EventArgs e)
+        {
+            lista.Items.Clear();
+
+            HashSet<string> veiculos = new HashSet<string>()
+            {
+                "Carro", "Moto", "Avião", "Bike", "Barco"
+            };
+
+            if (veiculos.Add("Jetski"))
+            {
+                MessageBox.Show("Novo veiculo adicionado");
+            }
+            else
+            {
+                MessageBox.Show("Não deu boa.");
+            }
+
+            foreach (string item in veiculos)
+            {
+                lista.Items.Add(item);
+            }
         }
     }
 }

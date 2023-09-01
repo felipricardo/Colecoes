@@ -30,6 +30,7 @@
         {
             this.lista = new System.Windows.Forms.ListBox();
             this.btnList = new System.Windows.Forms.Button();
+            this.btnHashSet = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lista
@@ -53,11 +54,23 @@
             this.btnList.UseVisualStyleBackColor = true;
             this.btnList.Click += new System.EventHandler(this.btnList_Click);
             // 
+            // btnHashSet
+            // 
+            this.btnHashSet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHashSet.Location = new System.Drawing.Point(733, 108);
+            this.btnHashSet.Name = "btnHashSet";
+            this.btnHashSet.Size = new System.Drawing.Size(234, 84);
+            this.btnHashSet.TabIndex = 2;
+            this.btnHashSet.Text = "HashSet";
+            this.btnHashSet.UseVisualStyleBackColor = true;
+            this.btnHashSet.Click += new System.EventHandler(this.btnHashSet_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(979, 545);
+            this.Controls.Add(this.btnHashSet);
             this.Controls.Add(this.btnList);
             this.Controls.Add(this.lista);
             this.Name = "Form1";
@@ -71,6 +84,7 @@
 
         private System.Windows.Forms.ListBox lista;
         private System.Windows.Forms.Button btnList;
+        private System.Windows.Forms.Button btnHashSet;
     }
 }
 
