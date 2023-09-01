@@ -58,6 +58,8 @@ namespace Colecoes
 
             //nomes2.Insert(2, "Max");
 
+            //nomes2.RemoveAt(1);
+
             foreach (string nome in nomes2)
             {
                 lista.Items.Add(nome);
