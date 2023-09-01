@@ -81,14 +81,34 @@ namespace Colecoes
                 "Carro", "Moto", "Avião", "Bike", "Barco"
             };
 
-            if (veiculos.Add("Jetski"))
-            {
-                MessageBox.Show("Novo veiculo adicionado");
-            }
-            else
-            {
-                MessageBox.Show("Não deu boa.");
-            }
+            MessageBox.Show(veiculos.ElementAt(3));
+
+            //if (veiculos.Add("Jetski"))
+            //{
+            //    MessageBox.Show("Novo item adicionado");
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Don't add.");
+            //}
+
+            // Métodos no HashSet:
+            //veiculos.Count;  // conta os items da lista
+            //veiculos.Clear(); // limpa a lista cada vez que rodar
+            //veiculos.Contains(""); // verifica se o elemento está na lista ou não
+            //veiculos.Remove(""); // remover item o especificando
+
+            //if (veiculos.Contains("Bike"))
+            //{
+            //    MessageBox.Show("Contem.");
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Não contem.");
+            //}
+
+            // veiculos.Remove("");
+            int num = veiculos.Count;
 
             foreach (string item in veiculos)
             {
