@@ -25,17 +25,17 @@ namespace Colecoes
             nomes[1] = "Gabriel";
             nomes[2] = "Toni";
 
+            // Lista gerenerica
             List<string> nomes2 = new List<string>();
 
             nomes2.Add("Leo");
             nomes2.Add("Julia");
             nomes2.AddRange(nomes);
 
-            lista.Items.Add(nomes2[0]);
-            lista.Items.Add(nomes2[1]);
-            lista.Items.Add(nomes2[2]);
-            lista.Items.Add(nomes2[3]);
-            lista.Items.Add(nomes2[4]);
+            foreach (string nome in nomes2)
+            {
+                lista.Items.Add(nome);
+            }
 
         }
     }
