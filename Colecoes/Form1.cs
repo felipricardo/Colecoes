@@ -226,6 +226,7 @@ namespace Colecoes
             {
                 MessageBox.Show("Foi de base");
             }
+            MessageBox.Show(nomes.First());
 
             foreach (string nome in nomes)
             {
