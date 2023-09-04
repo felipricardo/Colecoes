@@ -275,5 +275,23 @@ namespace Colecoes
                 }
             }
         }
+
+        private void btnStack_Click(object sender, EventArgs e)
+        {
+            lista.Items.Clear();
+
+            Stack<string> pilha = new Stack<string>();
+
+            pilha.Push("Felipe");
+            pilha.Push("Julia");
+            pilha.Push("Kin");
+
+            MessageBox.Show(pilha.Count.ToString());
+
+            foreach (string item in pilha)
+            {
+                lista.Items.Add(item);
+            }
+        }
     }
 }
