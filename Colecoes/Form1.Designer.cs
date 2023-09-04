@@ -35,6 +35,7 @@
             this.btnSortedList = new System.Windows.Forms.Button();
             this.btnSortedDictionary = new System.Windows.Forms.Button();
             this.btnSortedSet = new System.Windows.Forms.Button();
+            this.btnQueue = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lista
@@ -113,11 +114,23 @@
             this.btnSortedSet.UseVisualStyleBackColor = true;
             this.btnSortedSet.Click += new System.EventHandler(this.btnSortedSet_Click);
             // 
+            // btnQueue
+            // 
+            this.btnQueue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQueue.Location = new System.Drawing.Point(733, 558);
+            this.btnQueue.Name = "btnQueue";
+            this.btnQueue.Size = new System.Drawing.Size(234, 84);
+            this.btnQueue.TabIndex = 7;
+            this.btnQueue.Text = "Queue";
+            this.btnQueue.UseVisualStyleBackColor = true;
+            this.btnQueue.Click += new System.EventHandler(this.btnQueue_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1035, 637);
+            this.ClientSize = new System.Drawing.Size(1054, 664);
+            this.Controls.Add(this.btnQueue);
             this.Controls.Add(this.btnSortedSet);
             this.Controls.Add(this.btnSortedDictionary);
             this.Controls.Add(this.btnSortedList);
@@ -141,6 +154,7 @@
         private System.Windows.Forms.Button btnSortedList;
         private System.Windows.Forms.Button btnSortedDictionary;
         private System.Windows.Forms.Button btnSortedSet;
+        private System.Windows.Forms.Button btnQueue;
     }
 }
 

@@ -224,7 +224,7 @@ namespace Colecoes
             }
             else
             {
-                MessageBox.Show("Foi de base");
+                MessageBox.Show("Não pode repetir o valor.");
             }
             MessageBox.Show(nomes.First());
 
@@ -232,6 +232,14 @@ namespace Colecoes
             {
                 lista.Items.Add(nome);
             }
+        }
+
+        private void btnQueue_Click(object sender, EventArgs e)
+        {
+            Queue<string> fila = new Queue<string>();
+            fila.Enqueue("Felipe");
+            fila.Enqueue("Julia");
+            fila.Enqueue("Akira");
         }
     }
 }
