@@ -266,6 +266,8 @@ namespace Colecoes
 
             while (fila.Count > 0)
             {
+                MessageBox.Show("Primeiro da fila " + fila.Dequeue());
+                MessageBox.Show(fila.Count.ToString());
                 lista.Items.Clear();
                 foreach (string item in fila)
                 {
