@@ -292,6 +292,23 @@ namespace Colecoes
             {
                 lista.Items.Add(item);
             }
+
+            //MessageBox.Show("Elemento no topo " + pilha.Peek());
+            //MessageBox.Show(pilha.Count.ToString());
+
+            MessageBox.Show("Elemento no topo " + pilha.Pop()); // remove o elemento que estiver no topo
+            MessageBox.Show(pilha.Count.ToString()); // mostra a qtn de elementos após ser removido
+
+            while (pilha.Count > 0)
+            {
+                MessageBox.Show("Elemento no topo " + pilha.Pop());
+                MessageBox.Show(pilha.Count.ToString());
+                lista.Items.Clear();
+                foreach (string item in pilha)
+                {
+                    lista.Items.Add(item);
+                }
+            }
         }
     }
 }
