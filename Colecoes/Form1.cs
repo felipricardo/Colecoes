@@ -236,10 +236,21 @@ namespace Colecoes
 
         private void btnQueue_Click(object sender, EventArgs e)
         {
+            lista.Items.Clear();
+            
             Queue<string> fila = new Queue<string>();
             fila.Enqueue("Felipe");
             fila.Enqueue("Julia");
             fila.Enqueue("Akira");
+
+            MessageBox.Show(fila.Count.ToString());
+
+            foreach (string item in fila)
+            {
+                lista.Items.Add(item);
+            }
+
+            MessageBox.Show(fila.Peek());
         }
     }
 }
