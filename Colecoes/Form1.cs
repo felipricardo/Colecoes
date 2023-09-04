@@ -250,19 +250,27 @@ namespace Colecoes
                 lista.Items.Add(item);
             }
 
-            //MessageBox.Show("Primeiro da fila " + fila.Peek());
+            //MessageBox.Show("Primeiro da fila " + fila.Peek()); // Peek retorna o primeiro elemento da fila, semelhante ao First
             //MessageBox.Show(fila.Count.ToString());
 
             //MessageBox.Show("Primeiro da fila " + fila.Dequeue());
             //MessageBox.Show(fila.Count.ToString());
 
-            MessageBox.Show("Primeiro da fila " + fila.First());
-            MessageBox.Show(fila.Count.ToString());
+            //MessageBox.Show("Primeiro da fila " + fila.First());
+            //MessageBox.Show(fila.Count.ToString());
 
-            lista.Items.Clear();
-            foreach (string item in fila)
+            //MessageBox.Show("Ultimo da fila " + fila.Last());
+            //MessageBox.Show(fila.Count.ToString());
+
+            //fila.Clear(); // limpa toda a lista
+
+            while (fila.Count > 0)
             {
-                lista.Items.Add(item);
+                lista.Items.Clear();
+                foreach (string item in fila)
+                {
+                    lista.Items.Add(item);
+                }
             }
         }
     }
