@@ -250,7 +250,8 @@ namespace Colecoes
                 lista.Items.Add(item);
             }
 
-            MessageBox.Show(fila.Peek());
+            MessageBox.Show("Primeiro da fila " + fila.Peek());
+            MessageBox.Show(fila.Count.ToString());
         }
     }
 }
