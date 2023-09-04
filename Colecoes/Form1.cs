@@ -296,10 +296,10 @@ namespace Colecoes
             //MessageBox.Show("Elemento no topo " + pilha.Peek());
             //MessageBox.Show(pilha.Count.ToString());
 
-            MessageBox.Show("Elemento no topo " + pilha.Pop()); // remove o elemento que estiver no topo
-            MessageBox.Show(pilha.Count.ToString()); // mostra a qtn de elementos após ser removido
+            //MessageBox.Show("Elemento no topo " + pilha.Pop()); // remove o elemento que estiver no topo
+            //MessageBox.Show(pilha.Count.ToString()); // mostra a qtn de elementos após ser removido
 
-            while (pilha.Count > 0)
+            while (pilha.Count > 0) // na pilha, o primeiro a entrar é sempre o ultimo a sair
             {
                 MessageBox.Show("Elemento no topo " + pilha.Pop());
                 MessageBox.Show(pilha.Count.ToString());
